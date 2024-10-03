@@ -1,0 +1,48 @@
+function somar(a,b){
+    return a+b;
+}
+
+console.log("SOMA: "+ somar(5,9));
+
+
+const ninja = {
+    nome:' ',
+    cla:' ',
+    golpeEspecial:' ',
+    ligar: function(){
+        if(ninja.nome == "Naruto"){
+            ninja.cla = "Uzumaki";
+            ninja.golpeEspecial = "Rasengan";
+        }else if(ninja.nome == "Sasuke"){
+            ninja.cla = "Uchiha";
+            ninja.golpeEspecial = "Xidore";
+        }
+        console.log("Nome: "+ninja.nome+"\nClã: "+ninja.cla+"\nGolpe: "+ninja.golpeEspecial+"\n\n");
+    }
+};
+
+ninja.nome = "Naruto";
+ninja.ligar();
+
+ninja.nome = "Sasuke";
+ninja.ligar();
+
+
+const livro = {};
+livro.titulo = "O Alquimista",
+livro.autor = "Paulo Coelho",
+livro.anoPublicacao = 1988
+
+console.log(livro);
+
+const original = {
+  nome:"Ana",
+  idade:29
+};
+
+const copia = {...original};
+copia.idade = 30;
+
+console.log(original);
+console.log(copia);
+
